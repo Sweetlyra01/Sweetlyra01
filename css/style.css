@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@300&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.nav span {
+    margin-left: 50px;
+}
+.subtext {
+    text-align: center;
+}
+.nav ul li {
+    display: inline-block;
+    justify-content: center;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+.header {
+    height: 600px;
+    background-image: url(../header.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white
+}
+.headerTitle {
+    font-size: 70px;
+    font-family: 'Caprasimo', cursive;
+}
+.container {
+    margin:50px auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgb(76, 146, 220)
+}
+.text p {
+    text-align: center;
+}
+@media only screen and (max-width: 767px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: auto;
+    }
+    .header {
+        height: calc(100vh - 40px);
+    }
+    .headerTitle {
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .container {
+        justify-content: center;
+    }
+}
